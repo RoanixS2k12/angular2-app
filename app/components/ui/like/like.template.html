@@ -1,0 +1,4 @@
+<div>
+    <!--<div>{{ isLiked ? 'You liked this story' : 'Like this story'}}</div>-->
+    <i class="fa fa-heart" [class.is-liked]="isLiked" (click)="onLikeClick()"></i> {{ nbLikes }}   
+</div>

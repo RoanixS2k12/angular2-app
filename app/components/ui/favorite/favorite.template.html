@@ -1,0 +1,10 @@
+<div>
+    <i class="icon fa"
+        (click)="toggleFavorite()" 
+        [ngClass]="{
+            'fa-star-o' : !isFavorite,
+            'fa-star' : isFavorite
+        }"
+        aria-hidden="true">
+    </i>
+</div>

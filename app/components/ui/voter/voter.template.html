@@ -1,0 +1,11 @@
+<caret 
+    [isUp]="true"
+    [currentVoteBalance]="currentVoteBalance" 
+    (change)="onUpVote()">
+</caret>
+<div class="votes" [class.has-up-voted]="currentVoteBalance == 1" [class.has-down-voted]="currentVoteBalance == -1">{{ voteCount + currentVoteBalance }}</div>
+<caret 
+    [isDown]="true" 
+    [currentVoteBalance]="currentVoteBalance"
+    (change)="onDownVote()"
+></caret>

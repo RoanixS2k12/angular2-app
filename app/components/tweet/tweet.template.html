@@ -1,0 +1,14 @@
+<div class="media tweet">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" [src]="tweet.getImageUrl()" [alt]="tweet.getTitle()">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{ tweet.getTitle() }} <small>{{ tweet.getAuthor() }}</small></h4>
+    <div>{{ tweet.getMessage() }}</div>
+    
+    <like [nbLikes]="tweet.getNbLikes()" [isLiked]="tweet.getIsLiked()" ></like>
+    
+  </div>
+</div>

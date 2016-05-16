@@ -1,7 +1,18 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { PostsComponent } from './components/posts/posts.component';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    template: `
+        <div class="container">
+            <h1>{{ title }}</h1>
+            <posts></posts>
+        </div>
+    `,
+    directives: [
+        PostsComponent     
+    ]
 })
-export class AppComponent { }
+export class AppComponent { 
+    title: String = "Posts"; 
+}

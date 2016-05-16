@@ -1,0 +1,6 @@
+<i  class="fa"
+    (click)="onChange()"  
+    [class.fa-chevron-up]="isUp" 
+    [class.fa-chevron-down]="isDown" 
+    [class.has-up-voted]="isUp && currentVoteBalance == 1"
+    [class.has-down-voted]="isDown && currentVoteBalance == -1" ></i>
